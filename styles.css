@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c92626;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-section {
+    background-color: #cbd11f;
+    color: #090404;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-section input, .form-section textarea {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.resume-preview {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+    overflow: auto; 
+}
+
+.resume-preview .photo {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.resume-preview .personal-info {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.resume-preview .personal-info h2 {
+    margin: 0;
+    color: red; 
+}
+
+.resume-preview .section {
+    margin-top: 20px;
+}
+
+.resume-preview .section h3 {
+    margin: 0;
+}
+
+.resume-preview .section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-preview .section a {
+    color: #1e90ff; 
+    text-decoration: none;
+}
+
+.resume-preview .section a:hover {
+    text-decoration: underline;
+}

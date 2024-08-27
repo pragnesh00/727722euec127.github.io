@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-style: italic;">RESUME BUILDER</h1>
+        <form id="resumeForm">
+            <div class="form-section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+            </div>
+            
+            <div class="form-section">
+                <label for="education">Educational Qualifications:</label>
+                <textarea id="education" name="education" rows="4" required></textarea>
+                
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-section">
+                <label for="github">GitHub Profile Link:</label>
+                <input type="url" id="github" name="github">
+                
+                <label for="linkedin">LinkedIn Profile Link:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            
+            <button type="button" onclick="previewResume()">Preview Resume</button>
+            
+        </form>
+        
+        <div id="resumePreview" class="resume-preview">
+            <!-- Resume preview will be shown here -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
